@@ -113,6 +113,10 @@
             </div>
             <button class="button" onclick="mostrarArregloOriginal()">Mostrar Arreglo Original</button>
             <div class="output" id="arregloOriginalOutput"></div>
+
+                <!-- Añadir en el primer ejemplo -->
+<button class="button" onclick="mostrarLongitud()">Mostrar Longitud</button>
+ 
         </div>
 
         <!-- Ejemplo 2: Usar push para agregar elementos -->
@@ -171,7 +175,17 @@
         </div>
     </div>
 
+
+
+
     <script>
+        function mostrarLongitud() {
+    document.getElementById("arregloOriginalOutput").innerHTML += `
+        <p><b>Longitud del arreglo:</b> ${frutas.length} elementos</p>
+    `;
+}
+
+
         // Inicializar el arreglo
         let frutas = ['Manzana', 'Banana', 'Naranja', 'Mango'];
 
